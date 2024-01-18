@@ -38,3 +38,7 @@
     text-decoration: none;
     margin-right: 3vw;
 }
+
+.nav-maps-link:hover{
+    color: red;
+}
