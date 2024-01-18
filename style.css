@@ -6,7 +6,7 @@
 
 
 .nav-bg{
-    height: 100px;
+    height: 12vh;
     background-color: black;
     color: white;
     display: flex;
@@ -15,7 +15,7 @@
 }
 
 .page-logo{
-    font-size: 50px;
+    font-size: 5vh;
     font-weight: bold;
     margin-left: 2%;
     cursor: pointer;
@@ -23,17 +23,18 @@
     border-width: 4px;
     border-color: white;
     padding: 0 10px;
-    border-radius: 10px;
+    border-radius: 30%;
 }
 
 .nav-maps{
     margin-left: auto;
     color: white;
-    font-size: 1vw;
+    font-size: 3vh;
+    margin-right: 6vw;
 }
 
 .nav-maps-link{
     color: white;
     text-decoration: none;
-    margin-right: 2vw;
+    margin-right: 3vw;
 }
