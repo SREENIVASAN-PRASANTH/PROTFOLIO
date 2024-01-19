@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+*{
+    padding: 0;
+    margin: 0;
+}
+
 .homepage{
     font-family:'Poppins', sans-serif;
+    background-image: url("bg2.jpg");
+    height: 100vh;
+    background-size: cover;
 }
 
 
@@ -21,7 +29,7 @@
     cursor: pointer;
     border-style: solid;
     border-width: 4px;
-    border-color: white;
+    border-color: rgba(255, 0, 0, 0.822);
     padding: 0 10px;
     border-radius: 30%;
 }
@@ -31,14 +39,79 @@
     color: white;
     font-size: 3vh;
     margin-right: 6vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .nav-maps-link{
     color: white;
     text-decoration: none;
     margin-right: 3vw;
+    transition: 0.7s;
 }
 
 .nav-maps-link:hover{
     color: red;
+}
+
+
+.menu-line{
+    width: 40px;
+    height: 5px;
+    background-color: white;
+    margin: 8px;
+}
+
+.menu{
+    cursor: pointer;
+    display: none;
+}
+
+@media all and (max-width:600px){
+
+    .nav-bg{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-maps{
+        flex-direction: column;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        background-color: black;
+        width: 100vw;
+        display: none;
+    }
+
+    .show-menu{
+        display: block;
+        text-align: center;
+    }
+
+    .nav-maps-link{
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+
+    .menu{
+        display: block;
+        position: absolute;
+        right:15px;
+        top:30px;
+    }
+
+    .page-logo{
+        align-self: flex-start;
+        margin-top: 16px;
+        margin-left: 15px;
+    }
 }
