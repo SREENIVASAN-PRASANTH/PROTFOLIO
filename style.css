@@ -5,113 +5,67 @@
     margin: 0;
 }
 
-.homepage{
-    font-family:'Poppins', sans-serif;
-    background-image: url("bg2.jpg");
-    height: 100vh;
-    background-size: cover;
-}
-
-
-.nav-bg{
-    height: 12vh;
-    background-color: black;
+.bg-nav{
+    background-color: black !important;
     color: white;
-    display: flex;
-    align-items: center;
-
 }
 
-.page-logo{
-    font-size: 5vh;
-    font-weight: bold;
-    margin-left: 2%;
-    cursor: pointer;
+.font-family-color{
+    font-family:'Poppins', sans-serif !important;
+    color: white !important;
+}
+
+.logo-size{
+    font-size: 1.5rem !important;
+}
+
+.logo{
     border-style: solid;
-    border-width: 4px;
-    border-color: rgba(255, 0, 0, 0.822);
-    padding: 0 10px;
-    border-radius: 30%;
+    border-width: 2px;
+    padding: 0.3rem;
+    margin-right: 0.1rem;
+
 }
 
-.nav-maps{
-    margin-left: auto;
-    color: white;
-    font-size: 3vh;
-    margin-right: 6vw;
+.font-size{
+    font-size: 1.2rem;
+}
+
+.navbar-toggler{
+    border-color: white !important;
+    border-width: 2px !important;
+    border-radius: 0px !important;
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.nav-item a:hover{
+    color: red !important;
+}
+
+.nav-link{
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+}
+
+.profile-photo{
+    border-style: solid;
+    border-color: black;
+    width: 17rem;
+    height: 17rem;
+    border-radius: 30rem;
+}
+
+.introduction{
+    text-align: center;
+}
+
+
+.main-container{
+    height: 38rem;
     display: flex;
-    flex-direction: row;
     align-items: center;
-}
-
-.nav-links{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.nav-maps-link{
-    color: white;
-    text-decoration: none;
-    margin-right: 3vw;
-    transition: 0.7s;
-}
-
-.nav-maps-link:hover{
-    color: red;
-}
-
-
-.menu-line{
-    width: 40px;
-    height: 5px;
-    background-color: white;
-    margin: 8px;
-}
-
-.menu{
-    cursor: pointer;
-    display: none;
-}
-
-@media all and (max-width:600px){
-
-    .nav-bg{
-        display: flex;
-        flex-direction: column;
-    }
-    .nav-maps{
-        flex-direction: column;
-    }
-
-    .nav-links{
-        flex-direction: column;
-        background-color: black;
-        width: 100vw;
-        display: none;
-    }
-
-    .show-menu{
-        display: block;
-        text-align: center;
-    }
-
-    .nav-maps-link{
-        margin: 0px;
-        margin-bottom: 10px;
-    }
-
-    .menu{
-        display: block;
-        position: absolute;
-        right:15px;
-        top:30px;
-    }
-
-    .page-logo{
-        align-self: flex-start;
-        margin-top: 16px;
-        margin-left: 15px;
-    }
+    justify-content: center;
 }
