@@ -64,8 +64,37 @@
 
 
 .main-container{
-    height: 38rem;
+    height: 91vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    
+
+}
+
+.icon-size{
+    font-size: 1.7rem;
+    
+}
+
+.para-bottom-margin{
+    margin-bottom: 0rem;
+}
+
+@media (max-width:768px){
+    .introduction{
+        margin-top: 1rem !important;
+    }
+
+    .tech-stack{
+        font-size: 1.3rem !important;
+    }
+}
+
+.icon-size:hover{
+    color:blue;
+}
+
+.tech-stack{
+    font-size: 1.7rem;
 }
